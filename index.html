@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery with Modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="gallery">
+        <img src="./asset/1.jpeg" alt="pic 1" />
+        <img src="./asset/2.jpeg" alt="pic 2" />
+        <img src="./asset/3.jpeg" alt="pic 3" />
+        <img src="./asset/4.jpeg" alt="pic 4" />
+      </div>
+      <div class="gallery2">
+        <img
+          src="./asset/6.jpeg"
+          alt="pic 5"
+          style="
+            clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 100%, 0 100%);
+            grid-area: 1/1 / span 2 / span 2;
+          "
+        />
+        <img src="./asset/5.jpeg" alt="pic 6" />
+        <img src="./asset/7.jpg" alt="pic 7" />
+        <img
+          src="./asset/8.jpg"
+          alt="pic 8"
+          style="
+            clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+            grid-area: 2 / 2 / span 2 / span 2;
+          "
+        />
+      </div>
+      <div class="gallery">
+        <img src="./asset/9.jpeg" alt="pic 9" />
+        <img src="./asset/10.jpeg" alt="pic 10" />
+        <img src="./asset/11.jpeg" alt="pic 11" />
+        <img src="./asset/12.jpg" alt="pic 12" />
+      </div>
+    </div>
+    <div class="container" style="margin-top: 10px">
+      <div class="gallery">
+        <img src="./asset/13.jpeg" alt="pic 13" />
+        <img src="./asset/14.jpeg" alt="pic 14" />
+        <img src="./asset/15.jpeg" alt="pic 15" />
+        <img src="./asset/16.jpeg" alt="pic 16" />
+      </div>
+      <div class="gallery2">
+        <img
+          src="./asset/17.jpeg"
+          alt="pic 17"
+          style="
+            clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 100%, 0 100%);
+            grid-area: 1/1 / span 2 / span 2;
+          "
+        />
+        <img src="./asset/18.jpeg" alt="pic 18" />
+        <img src="./asset/19.jpeg" alt="pic 19" />
+        <img
+          src="./asset/20.jpeg"
+          alt="pic 20"
+          style="
+            clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+            grid-area: 2 / 2 / span 2 / span 2;
+          "
+        />
+      </div>
+      <div class="gallery">
+        <img src="./asset/21.jpeg" alt="pic 21" />
+        <img src="./asset/22.jpeg" alt="pic 22" />
+        <img src="./asset/23.jpeg" alt="pic 23" />
+        <img src="./asset/24.jpeg" alt="pic 24" />
+      </div>
+    </div>
+    <!-- modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+      <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
